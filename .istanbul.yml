@@ -1,0 +1,19 @@
+verbose: false
+instrumentation:
+  root: .
+  extensions:
+    - .js
+    - .jsx
+  default-excludes: true
+  excludes:
+    - "**/*.spec.js"
+    - "node_modules/**/*.*"
+    - "dist/**/*.*"
+    - "webpack.config.js"
+    - "postcss.config.js"
+    - "App.js"
+    - "app/client/*.*"
+  include-all-sources: true
+reporting:
+  reports:
+    - lcov
