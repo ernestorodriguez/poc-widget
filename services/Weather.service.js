@@ -5,7 +5,7 @@ const restClient = axios.create({
     timeout: 5000,
 });
 
-const URL = 'forecast?q=M%C3%BCnchen,DE&appid=b6907d289e10d714a6e88b30761fae22';
+const URL = 'forecast/hourly?q=M%C3%BCnchen,DE&appid=b6907d289e10d714a6e88b30761fae22';
 
 class WeatherService {
     static get() {

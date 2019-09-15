@@ -35,7 +35,7 @@ describe('Weather Widget Acceptance test', () => {
                         maximum: 12,
                     },
                     timeStamp: 1487268000000,
-                    date: new Date(1487268000000)
+                    date: new Date('2017-02-16 15:00:00')
                 },
                 additional: {
                     city: 'Altstadt',

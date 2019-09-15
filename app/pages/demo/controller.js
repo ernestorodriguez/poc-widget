@@ -6,10 +6,11 @@ import WeatherWidget from '../../../lib/weatherWidget/index';
 import CelsiusUnit from '../../../lib/weatherWidget/celsiusUnit';
 
 export default function controller(data) {
+
     const weather = new WeatherWidget({
         units: new CelsiusUnit(),
         data: data,
-        time: new Date('2017-02-16 15:00:00'),
+        time: new Date('2019-03-28 07:00:00'),
     });
 
     const config = {
