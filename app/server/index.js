@@ -5,7 +5,7 @@ import { error, notFound } from './middlewares/utils';
 const router = Router();
 
 router.use('/', demo);
-router.use('*', notFound);
+//router.use(notFound);
 
 router.use(error);
 
