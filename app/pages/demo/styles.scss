@@ -1,1 +1,6 @@
 @import '../../assets/styles/pages/main';
+@import '../../components/weatherWidget/styles';
+
+body {
+  background-color: $blue-90;
+}

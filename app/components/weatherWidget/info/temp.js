@@ -5,12 +5,12 @@ class Temp extends React.Component {
         const { type, current, range, units } = this.props;
 
         return (
-            <div className={'weather-widget-info__temp'}>
-                <div className={'weather-widget__info-temp-header'}>
-                    <div>{ type }</div>
-                    <div>{ range.maximum }{ units } / {range.minimum}{ units }</div>
+            <div className={'weather-widget-info__block weather-widget-info__block--temp'}>
+                <div className={'info-temp-header'}>
+                    <div className={'info-temp-header__block info-temp-header__block--type'}>{ type }</div>
+                    <div className={'info-temp-header__block info-temp-header__block--range'}>{ range.maximum }{ units } / {range.minimum}{ units }</div>
                 </div>
-                <div className={'weather-widget__info-temp-right-now'}>
+                <div className={'info-temp-right-now'}>
                     { current }{ units }
                 </div>
             </div>

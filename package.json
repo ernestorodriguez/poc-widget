@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node -r \"@babel/register\" ./App.js",
-    "start-dev": "NODE_ENV=development node -r \"@babel/register\" ./App.js",
+    "start-dev": "NODE_ENV=development nodemon -r \"@babel/register\" ./App.js",
     "build": "rm -rf dist && webpack --mode development",
     "watch": "rm -rf dist && webpack --watch --mode development",
     "dist": "rm -rf dist && webpack --mode production",
@@ -20,7 +20,9 @@
   "author": "Ernesto Rodriguez",
   "license": "ISC",
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.4",
     "express": "^4.17.1",
+    "nodemon": "^1.19.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "underscore": "^1.9.1"

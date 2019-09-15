@@ -2,14 +2,16 @@ import React from 'react';
 
 class Hour extends React.Component {
     render() {
-        const { hour, icon, temp, units } = this.props;
+        const { hour, icon, temp, units, current } = this.props;
 
         return (
-            <li>
-                <div className={'weather-widget__forecast-hour'}>
-                    <div>{hour}</div>
-                    <div> <img src={`https://place-hold.it/50x50?text=${icon}`} /></div>
-                    <div>{temp}{units}</div>
+            <li className={`weather-widget__forecast-hour ${ current ? 'weather-widget__forecast-hour--active' : ''}`}>
+                <div className={'weather-widget__forecast-hour-container'}>
+                    <div className={'weather-widget__forecast-hour-hour'}>{hour}</div>
+                    <div className={'weather-widget__forecast-hour-image-container'}>
+                        <img className={'weather-widget__forecast-hour-image'} src={`/images/${icon}-icon.svg`} />
+                    </div>
+                    <div className={'weather-widget__forecast-hour-temp'}>{temp}{units}</div>
                 </div>
             </li>
         );

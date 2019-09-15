@@ -23,13 +23,32 @@ router.get('/', (req, res) => {
             }
         },
         forecast: [
+            { hour: '08:00', icon: 'sun', temp: 6},
+            { hour: '1:00', icon: 'sun', temp: 10},
+            { hour: '2:00', icon: 'sun', temp: 10},
+            { hour: '3:00', icon: 'sun', temp: 10, current: true},
+            { hour: '4:00', icon: 'sun', temp: 10},
+            { hour: '5:00', icon: 'sun', temp: 10},
+            { hour: '6:00', icon: 'sun', temp: 10},
+            { hour: '7:00', icon: 'sun', temp: 10},
+            { hour: '8:00', icon: 'sun', temp: 10},
             { hour: '9:00', icon: 'sun', temp: 10},
             { hour: '10:00', icon: 'sun', temp: 10},
             { hour: '11:00', icon: 'sun', temp: 10},
             { hour: '12:00', icon: 'sun', temp: 10},
             { hour: '1:00', icon: 'sun', temp: 10},
             { hour: '2:00', icon: 'sun', temp: 10},
-            { hour: '3:00', icon: 'sun', temp: 10}
+            { hour: '3:00', icon: 'sun', temp: 10},
+            { hour: '4:00', icon: 'sun', temp: 10},
+            { hour: '5:00', icon: 'sun', temp: 10},
+            { hour: '6:00', icon: 'sun', temp: 10},
+            { hour: '7:00', icon: 'sun', temp: 10},
+            { hour: '8:00', icon: 'sun', temp: 10},
+            { hour: '9:00', icon: 'sun', temp: 10},
+            { hour: '10:00', icon: 'sun', temp: 10},
+            { hour: '10:00', icon: 'sun', temp: 10},
+            { hour: '11:00', icon: 'sun', temp: 10},
+
         ],
         context: {
             tempUnits: '°',

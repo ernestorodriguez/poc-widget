@@ -5,11 +5,11 @@ class Additional extends React.Component {
         const { city, day, date} = this.props;
 
         return (
-            <div className={'weather-widget-info__additional'}>
-                <div className={'weather-widget__info-temp-header'}>
-                    <div>{ city }</div>
+            <div className={'weather-widget-info__block weather-widget-info__block--additional'}>
+                <div className={'info-additional-header'}>
+                    { city }
                 </div>
-                <div className={'weather-widget__info-temp-right-now'}>
+                <div className={'info-additional-date'}>
                     <div>{ day }</div>
                     <div>{ date }</div>
                 </div>

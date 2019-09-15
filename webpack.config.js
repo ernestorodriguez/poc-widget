@@ -1,4 +1,5 @@
 const config =  require('./config').config.server;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -8,6 +9,11 @@ module.exports = {
     output: {
         path: __dirname + '/' + config.staticsFolder,
     },
+    plugins: [
+        new CopyWebpackPlugin([
+            {from: './app/assets/images', to: 'images'}
+        ])
+    ],
     module: {
         rules: [
             {
@@ -46,6 +52,6 @@ module.exports = {
                     },
                 ]
             }
-        ]
+        ],
     }
 };

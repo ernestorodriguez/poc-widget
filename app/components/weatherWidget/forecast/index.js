@@ -8,7 +8,7 @@ class Forecast extends React.Component {
 
         return (
             <div className={'weather-widget__forecast'}>
-                <ul>
+                <ul className={'weather-widget__forecast-container'}>
                     {hours}
                 </ul>
             </div>

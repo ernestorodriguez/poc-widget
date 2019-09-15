@@ -1,0 +1,86 @@
+.weather-widget__info {
+  overflow: hidden;
+  width: 100%;
+  margin: 2vw 0 0;
+}
+
+.weather-widget-info__block {
+  float: left;
+  overflow: hidden;
+}
+
+/**
+  ICON
+ */
+
+.weather-widget-info__block--icon {
+  float: left;
+  height: auto;
+  width: 26vw;
+  padding-left: 7.5vw;
+}
+
+.weather-widget-info__block-image {
+  height: auto;
+  width: 17.6vw;
+}
+
+/**
+  TEMP
+ */
+
+.weather-widget-info__block--temp {
+  width: 38vw;
+  padding-right: 7.7vw;
+  padding-left: 6.7vw;
+}
+
+
+.info-temp-header {
+  color: $gray-40;
+}
+
+.info-temp-header__block {
+  font-size: 2.4vw;
+
+  float: left;
+}
+
+.info-temp-header__block--type {
+  text-align: left;
+  width: 35%;
+}
+
+.info-temp-header__block--range {
+  text-align: right;
+  width: 65%;
+}
+
+.info-temp-right-now {
+  font-size: 13vw;
+  line-height: 1.3;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/**
+  ADDITIONAL
+ */
+
+.weather-widget-info__block--additional {
+  width: 36vw;
+}
+
+
+
+.info-additional-header {
+  font-size: 2.4vw;
+  color: $gray-40;
+}
+
+.info-additional-date {
+  font-size: 5.0vw;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 1.4vw;
+}

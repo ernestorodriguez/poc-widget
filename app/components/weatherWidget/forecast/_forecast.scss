@@ -1,0 +1,52 @@
+.weather-widget__forecast {
+  width: 100%;
+  overflow: auto;
+  margin-top: 4.2vw;
+}
+
+.weather-widget__forecast-container {
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+/**
+  Hour forecast
+ */
+
+.weather-widget__forecast-hour {
+  display: inline-block;
+  text-align: center;
+  padding: 1.7vw;
+  margin: .8vw;
+  width: 11vw;
+
+}
+
+.weather-widget__forecast-hour--active {
+  background: $gray-60;
+  border-radius: .5vw;
+}
+
+.weather-widget__forecast-hour-hour {
+  font-size: 2.5vw;
+  color: $gray-40;
+}
+
+.weather-widget__forecast-hour-temp {
+  font-weight: bold;
+  font-size: 4.2vw;
+}
+
+.weather-widget__forecast-hour-image-container {
+  margin-top: 1.4vw;
+  margin-bottom: 1.1vw;
+  width: 6.5vw;
+  display: inline-block;
+}
+
+.weather-widget__forecast-hour-image {
+  width: 100%;
+  height: auto;
+  fill: green;
+}
