@@ -5,11 +5,11 @@ import Additional from './additional';
 
 class Info extends React.Component {
     render() {
-        const { icon, temp, additional, context } = this.props;
+        const { temp, additional, context } = this.props;
 
         return (
             <div className={'weather-widget__info'}>
-               <Icon icon={icon}/>
+               <Icon icon={temp.icon}/>
                <Temp units={context.tempUnits} {...temp}/>
                <Additional {...additional}/>
             </div>

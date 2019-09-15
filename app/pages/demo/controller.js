@@ -1,11 +1,19 @@
 
 import React from 'react';
 import View from  './view';
-import WeatherWidget from '../../components/weatherWidget';
+import UiWeatherWidget from '../../components/uiWeatherWidget';
+import WeatherWidget from '../../../lib/weatherWidget/index';
+import CelsiusUnit from '../../../lib/weatherWidget/celsiusUnit';
 
 export default function controller(data) {
+    const weather = new WeatherWidget({
+        units: new CelsiusUnit(),
+        data: data,
+        time: new Date('2017-02-16 15:00:00'),
+    });
+
     const config = {
-        weatherWidget: new WeatherWidget(data),
+        weatherWidget: new UiWeatherWidget(weather.render()),
         model: data,
     };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import View from './view';
 
-class WeatherWidget {
+class UiWeatherWidget {
     constructor({ info, forecast, context }) {
         this.info = info;
         this.forecast = forecast;
@@ -12,4 +12,4 @@ class WeatherWidget {
     }
 }
 
-export default WeatherWidget;
+export default UiWeatherWidget;

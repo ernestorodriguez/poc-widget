@@ -14,10 +14,10 @@ const error = (err, req, res, next) => {
 const getWeatherData = (req, res, next) => {
     WheaterService.get().then((data) => {
         res.locals.weatherData = data;
+        next();
     }).catch(error => {
-        console.error(error);
+        next(error);
     });
-    next();
 };
 
 export {
