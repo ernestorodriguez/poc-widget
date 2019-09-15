@@ -40,8 +40,7 @@
 }
 
 .info-temp-header__block {
-  font-size: 2.4vw;
-
+  font-size: $font-size-s;
   float: left;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .info-temp-right-now {
-  font-size: 13vw;
+  font-size: $font-size-xxl;
   line-height: 1.3;
   font-weight: bolder;
   text-align: center;
@@ -71,12 +70,12 @@
 }
 
 .info-additional-header {
-  font-size: 2.4vw;
+  font-size: $font-size-s;
   color: $gray-40;
 }
 
 .info-additional-date {
-  font-size: 5.0vw;
+  font-size: $font-size-xl;
   line-height: 1.4;
   font-weight: bold;
   margin-top: 1.4vw;

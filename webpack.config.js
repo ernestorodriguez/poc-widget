@@ -4,7 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         demo: './app/client/demo.js',
-        vendor: 'react-dom'
     },
     output: {
         path: __dirname + '/' + config.staticsFolder,

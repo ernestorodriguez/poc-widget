@@ -9,7 +9,6 @@
   margin: 0;
 }
 
-
 /**
   Hour forecast
  */
@@ -25,17 +24,17 @@
 
 .weather-widget__forecast-hour--active {
   background: $gray-60;
-  border-radius: .5vw;
+  border-radius: $border-radius;
 }
 
 .weather-widget__forecast-hour-hour {
-  font-size: 2.5vw;
+  font-size: $font-size-s;
   color: $gray-40;
 }
 
 .weather-widget__forecast-hour-temp {
   font-weight: bold;
-  font-size: 4.2vw;
+  font-size: $font-size-l;
 }
 
 .weather-widget__forecast-hour-image-container {
