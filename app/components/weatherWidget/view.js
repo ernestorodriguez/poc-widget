@@ -4,10 +4,12 @@ import Forecast from './forecast';
 
 class WeatherWidgetView extends React.Component {
     render() {
+        const {info, forecast, context } = this.props;
+
         return (
             <div className={'weather-widget'}>
-                <Info/>
-                <Forecast/>
+                <Info context={context} {...info}/>
+                <Forecast context={context} list={forecast}/>
             </div>
         );
     }

@@ -3,12 +3,13 @@ import Hour from './hour';
 
 class Forecast extends React.Component {
     render() {
+        const { list, context } = this.props;
+        const hours = list.map((hour, index) => <Hour key={index} units={context.tempUnits} {...hour} />);
+
         return (
             <div className={'weather-widget__forecast'}>
                 <ul>
-                    <li>
-                        <Hour/>
-                    </li>
+                    {hours}
                 </ul>
             </div>
         );

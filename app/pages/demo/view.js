@@ -1,11 +1,12 @@
 import React from 'react';
-import WeatherWidgetView from '../../components/weatherWidget/view';
 
 class View extends React.Component {
     render() {
+        const { weatherWidget } = this.props;
+
         return (
             <div className={'demo-page'}>
-                <WeatherWidgetView/>
+                {weatherWidget.render()}
             </div>
         );
     }

@@ -5,6 +5,7 @@ const notFound = (req, res) => {
 };
 
 const error = (err, req, res, next) => {
+    console.log(err);
     res.status(500);
     res.send('ups something wen wrong');
 };

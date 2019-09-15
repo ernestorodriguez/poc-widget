@@ -2,14 +2,16 @@ import React from 'react';
 
 class Additional extends React.Component {
     render() {
+        const { city, day, date} = this.props;
+
         return (
             <div className={'weather-widget-info__additional'}>
                 <div className={'weather-widget__info-temp-header'}>
-                    <div>Munich</div>
+                    <div>{ city }</div>
                 </div>
                 <div className={'weather-widget__info-temp-right-now'}>
-                    <div>Thursday</div>
-                    <div>28. March</div>
+                    <div>{ day }</div>
+                    <div>{ date }</div>
                 </div>
             </div>
         );

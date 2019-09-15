@@ -1,14 +1,13 @@
-import template from '../../components/layout';
+
 import React from 'react';
 import View from  './view';
-import { renderToString } from 'react-dom/server';
+import WeatherWidget from '../../components/weatherWidget';
 
-exports.render = function render(req, res) {
-    const body =  renderToString(<View />);
+export default function controller(data) {
+    const config = {
+        weatherWidget: new WeatherWidget(data),
+        model: data,
+    };
 
-    res.send(template({
-        body: body,
-        title: 'Demo Page',
-        pageId: 'demo',
-    }));
-};
+    return  <View {...config}/>;
+}
