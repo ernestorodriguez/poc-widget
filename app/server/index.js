@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import demo from './../pages/demo';
-import { error, notFound } from './middlewares/utils';
+import { error, notFound, getWeatherData } from './middlewares/utils';
 
 const router = Router();
 
-router.use('/', demo);
+router.use('/', getWeatherData, demo);
 //router.use(notFound);
 
 router.use(error);

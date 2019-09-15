@@ -1,3 +1,4 @@
+import WheaterService from '../../../services/Weather.service';
 
 const notFound = (req, res) => {
     res.status(404);
@@ -10,7 +11,18 @@ const error = (err, req, res, next) => {
     res.send('ups something wen wrong');
 };
 
+const getWeatherData = (req, res, next) => {
+    WheaterService.get().then((data) => {
+        res.locals.weatherData = data;
+    }).catch(error => {
+        console.error(error);
+    });
+    next();
+};
+
 export {
     notFound,
-    error
-}
+    error,
+    getWeatherData
+};
+
