@@ -3,7 +3,10 @@ import Temp from './temp';
 import Icon from './icon';
 import Additional from './additional';
 
-class Info extends React.Component {
+class Info extends React.Component {3
+    componentDidMount() { 
+        TweenLite.to('.weather-widget-info__block--icon', .5 , { delay: 2, opacity: 1, y:0}, '+=0.5');  
+    }
     render() {
         const { temp, additional, context } = this.props;
         return (
@@ -16,5 +19,5 @@ class Info extends React.Component {
     }
 }
 
-
+//weather-widget-info__block
 export default Info;

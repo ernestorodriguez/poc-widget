@@ -51,3 +51,10 @@ To start continues testing
 ```bash
 $ npm run test:watch
 ```
+
+## the server will start at 
+## desa
+localhost:3000/
+
+## production
+localhost:8080/
