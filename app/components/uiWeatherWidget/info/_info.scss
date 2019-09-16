@@ -7,6 +7,7 @@
 .weather-widget-info__block {
   float: left;
   overflow: hidden;
+
 }
 
 /**
@@ -18,6 +19,8 @@
   height: auto;
   width: 26vw;
   padding-left: 7.5vw;
+  opacity: 0;
+  transform: translate(0, -18vw);
 }
 
 .weather-widget-info__block-image {

@@ -10,7 +10,7 @@ export default function controller(data) {
     const weather = new WeatherWidget({
         units: new CelsiusUnit(),
         data: data,
-        time: new Date('2019-03-28 07:00:00'),
+        time: new Date('2019-03-28T07:00:00'),
     });
 
     const config = {
