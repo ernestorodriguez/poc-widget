@@ -1,4 +1,4 @@
-import DateHelpers from "../../../../lib/utils/DateHelpers";
+import DateHelpers from '../../../../lib/utils/DateHelpers';
 import { expect } from 'chai';
 
 describe('Datehelpers', () => {

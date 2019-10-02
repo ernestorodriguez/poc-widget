@@ -1,6 +1,6 @@
 const defaultConfig = require('./default');
 const developmentConfig = require('./development');
-const assing = require('@recursive/assign');
+const assign = require('@recursive/assign');
 
 
 const configByEnvironment = {
@@ -11,7 +11,7 @@ const configByEnvironment = {
 const getConfig = function () {
     const env = process.env.NODE_ENV;
 
-    return assing({}, defaultConfig, configByEnvironment[env]);
+    return assign({}, defaultConfig, configByEnvironment[env]);
 };
 
 const config = getConfig();

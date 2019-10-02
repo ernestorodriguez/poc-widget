@@ -2,19 +2,3 @@
 @import '../base/normalize';
 @import '../base/main';
 @import '../base/typography';
-
-.image {
-  width: 100%;
-  height: auto;
-  box-shadow: 2px 2px 2px black;
-  transform: translate(20px);
-  text-shadow: 2px 2px 2px black;
-  transition: all 4s ease;
-
-}
-
-.a {
-  transition: 1s;
-  background: linear-gradient(to bottom, white, black);
-}
-

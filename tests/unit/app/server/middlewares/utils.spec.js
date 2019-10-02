@@ -34,13 +34,13 @@ describe('Middlewares Utils', () => {
 
     describe('#getWeatherData', () => {
         it('must call WeatherService.get', (done) => {
-            const reqMock = {}
+            const reqMock = {};
             const resMock = {
                 locals: {}
-            }
+            };
 
             getWeatherData(reqMock, resMock, (error) => {
-                done()
+                done();
             });
         });
     });
