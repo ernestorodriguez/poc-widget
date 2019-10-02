@@ -7,7 +7,7 @@ module.exports = ({ body, title, pageId }) => `
                 <link type="text/css" rel="stylesheet" href="/${pageId}.css" />
             </head>
             <body>
-                <div id="root-app">${body}</div>
+                <main id="root-app">${body}</main>
                 <!--<script src="/vendor.js"></script>-->
                 <script src="/${pageId}.js"></script>
             </body>
