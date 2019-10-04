@@ -14,7 +14,7 @@ export default function controller(data) {
     });
 
     const config = {
-        weatherWidget: new UiWeatherWidget(weather.render()),
+        weatherWidget: new UiWeatherWidget(weather.generateUiModel()),
         model: data,
     };
 

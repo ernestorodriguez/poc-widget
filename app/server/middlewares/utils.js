@@ -12,17 +12,17 @@ const error = (err, req, res, next) => {
     res.send('ups something wen wrong');
 };
 
-const normaliceDates = function(list) {
+const normalizeDates = function(list) {
     return _.map(list, (item) => {
-        item.dt_txt =  item.dt_txt.replace(/ /g,"T");
+        item.dt_txt = item.dt_txt.replace(/ /g, 'T');
         return item;
-    })
-}
+    });
+};
 
 const getWeatherData = (req, res, next) => {
     WheaterService.get().then((data) => {
         res.locals.weatherData = data;
-        res.locals.weatherData.list = normaliceDates(data.list)
+        res.locals.weatherData.list = normalizeDates(data.list);
         next();
     }).catch(error => {
         next(error);

@@ -20,5 +20,4 @@ class Info extends React.Component {
     }
 }
 
-//weather-widget-info__block
 export default Info;
