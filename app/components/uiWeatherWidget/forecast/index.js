@@ -7,8 +7,8 @@ class Forecast extends React.Component {
         this.forecastContainerRef = React.createRef();
     }
 
-    componentDidMount() { 
-        TweenLite.to(this.forecastContainerRef.current, 2 , { opacity: 1, delay:1, scrollTo: {x:'.weather-widget__forecast-hour--active', offsetX: 200}});  
+    componentDidMount() {
+        TweenLite.to(this.forecastContainerRef.current, 2, { opacity: 1, delay: 1, scrollTo: {x: '.weather-widget__forecast-hour--active', offsetX: 200}});
     }
 
     render() {
@@ -16,11 +16,11 @@ class Forecast extends React.Component {
         const hours = list.map((hour, index) => <Hour key={index} units={context.tempUnits} {...hour} />);
 
         return (
-            <div ref={this.forecastContainerRef} className={'weather-widget__forecast'}>
+            <section ref={this.forecastContainerRef} className={'weather-widget__forecast'}>
                 <ul className={'weather-widget__forecast-container'}>
                     {hours}
                 </ul>
-            </div>
+            </section>
         );
     }
 }

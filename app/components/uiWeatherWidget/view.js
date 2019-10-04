@@ -7,10 +7,10 @@ class WeatherWidgetView extends React.Component {
         const {info, forecast, context } = this.props;
 
         return (
-            <div className={'weather-widget'}>
+            <article className={'weather-widget'}>
                 <Info context={context} {...info}/>
                 <Forecast context={context} list={forecast}/>
-            </div>
+            </article>
         );
     }
 }

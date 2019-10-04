@@ -11,11 +11,11 @@ class Info extends React.Component {
         const { temp, additional, context } = this.props;
 
         return (
-            <div className={'weather-widget__info'}>
+            <section className={'weather-widget__info'}>
                <Icon icon={temp.icon}/>
                <Temp units={context.tempUnits} {...temp}/>
                <Additional {...additional}/>
-            </div>
+            </section>
         );
     }
 }

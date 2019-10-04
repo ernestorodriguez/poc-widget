@@ -9,10 +9,7 @@ class Additional extends React.Component {
                 <div className={'info-additional-header'}>
                     { city }
                 </div>
-                <div className={'info-additional-date'}>
-                    <div>{ day }</div>
-                    <div>{ date }</div>
-                </div>
+                <time className={'info-additional-date'}>{ day }<br/>{ date }</time>
             </div>
         );
     }
