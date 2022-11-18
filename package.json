@@ -68,7 +68,7 @@
     "prop-types": "^15.7.2",
     "sass-loader": "^8.0.0",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.12"
   },
   "browserslist": [
     "last 1 version",
